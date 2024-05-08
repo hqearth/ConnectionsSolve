@@ -311,7 +311,7 @@ def train_dqn(env, episodes, batch_size, model_dir='model_checkpoints'):
 words = ['apple', 'banana', 'grape', 'pear', 'chair', 'table', 'desk', 'sofa', 'blue', 'yellow', 'green', 'red', 'denver', 'boulder', 'vail', 'greeley']
 groups = [0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3]
 env = ConnectionsGame(words, groups)
-model, losses, rewards, tries, exploring, exploiting = train_dqn(env, 750, 32)
+model, losses, rewards, tries, exploring, exploiting = train_dqn(env, 900, 32)
 model.save('finalmodel.keras')
 
 plt.figure(figsize=(14, 7))
